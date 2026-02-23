@@ -413,7 +413,7 @@ async function buyItem(itemId, itemName, stars) {
   try {
     // Отправляем боту запрос на создание инвойса
     const userId = user?.id;
-    const res = await fetch('https://lednik-shop-bot.railway.app/create_invoice', {
+    const res = await fetch('https://lednik-shop-bot-production.up.railway.app/create_invoice', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
